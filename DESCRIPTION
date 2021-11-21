@@ -3,18 +3,15 @@ Type: Package
 Title: get by category
 Version: 0.1.0
 Author: Noor Nashid
-Maintainer: The package maintainer <yourself@somewhere.net>
+Maintainer: The package maintainer <noor.nashid1@gmail.com>
 Description: get by category
     Use four spaces when indenting paragraphs within the Description.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    ggplot2,
     datateachr,
-    gapminder,
     dplyr,
-    magrittr,
     tidyr,
     tidyverse
 Suggests: 
