@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-During the data exploration phase, developers write repeated code to investigate the summary view based on different categories. The goal of this package is to avoid writing [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code) during the data exploration phase. This package implements counting the number of observations per category in a given dataset. 
+During the data exploration phase, developers write repeated code to investigate the summary view based on different categories. The goal of this package is to avoid writing [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code) during the data exploration phase. This package implements counting the number of observations per category in a given dataset and returns the top observations. 
 
 ## Installation
 
@@ -27,9 +27,10 @@ This package is not in the CRAN yet. You can install the development version of 
 ``` r
 devtools::install_github("stat545ubc-2021/functionsnashid")
 ```
+
 ## Basic Example
 
-Now we demonstrate the basic usage of the function:
+Please check `?count_by_category` for a more detailed explanation of the function. Now we demonstrate the basic usage of the function:
 
 1. **Results in descending order by default:**
 

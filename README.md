@@ -11,7 +11,8 @@ investigate the summary view based on different categories. The goal of
 this package is to avoid writing [boilerplate
 code](https://en.wikipedia.org/wiki/Boilerplate_code) during the data
 exploration phase. This package implements counting the number of
-observations per category in a given dataset.
+observations per category in a given dataset and returns the top
+observations.
 
 ## Installation
 
@@ -26,7 +27,8 @@ devtools::install_github("stat545ubc-2021/functionsnashid")
 
 ## Basic Example
 
-Now we demonstrate the basic usage of the function:
+Please check `?count_by_category` for a more detailed explanation of the
+function. Now we demonstrate the basic usage of the function:
 
 1.  **Results in descending order by default:**
 
@@ -35,9 +37,9 @@ library(functionsnashid)
 library(tidyverse)
 #> ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
 #> ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
-#> ✓ tibble  3.1.5     ✓ dplyr   1.0.7
+#> ✓ tibble  3.1.6     ✓ dplyr   1.0.7
 #> ✓ tidyr   1.1.4     ✓ stringr 1.4.0
-#> ✓ readr   2.0.2     ✓ forcats 0.5.1
+#> ✓ readr   2.1.0     ✓ forcats 0.5.1
 #> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 #> x dplyr::filter() masks stats::filter()
 #> x dplyr::lag()    masks stats::lag()
