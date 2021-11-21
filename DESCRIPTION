@@ -1,6 +1,6 @@
 Package: functionsnashid
 Title: Collection of functions for data exploration
-Version: 0.1.0
+Version: 0.1.2
 Authors@R: 
     person(given = "Noor ",
            family = "Nashid",
