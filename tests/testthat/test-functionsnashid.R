@@ -26,7 +26,7 @@ test_that("test return types", {
   expect_true(is.numeric(result$count))
 })
 
-test_that("test argument", {
+test_that("test arguments", {
   expect_error(count_by_category("lotr_test_data", race, 1), "data should be of type dataframe. Here, your input data is of class: character")
 
   expected = tribble(~race,         ~count,
@@ -39,13 +39,13 @@ test_that("test argument", {
 })
 
 
-test_that("test descending function", {
+test_that("test descending function with limit as 1", {
   result <- count_by_category(lotr_test_data, race, 1, TRUE)
   expect_equal(result$race, "Men")
   expect_equal(result$count, 5)
 })
 
-test_that("test descending function", {
+test_that("test descending function with limit > 1", {
   expected = tribble(
     ~race,         ~count,
     "Men",         5,
@@ -59,13 +59,13 @@ test_that("test descending function", {
 })
 
 
-test_that("test ascending function", {
+test_that("test ascending function with limit as 1", {
   result <- count_by_category(lotr_test_data, race, 1, FALSE)
   expect_equal(result$race, "Hobbits")
   expect_equal(result$count, 1)
 })
 
-test_that("test ascending function", {
+test_that("test ascending function with limit > 1", {
   # get 4 results
   expected = tribble(~race,         ~count,
                      "Hobbits",     1,

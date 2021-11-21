@@ -8,9 +8,9 @@ is.boolean <- function(x){
   is.logical(x) && length(x) == 1
 }
 #'
-#' @title **count_by_category**
+#' **count_by_category**
 #'
-#' @description Given a data frame, for a specific column, count of the number of observations per category. This function removes NA values
+#' Given a data frame, for a specific column, count of the number of observations per category. This function removes NA values
 #' and then count per category. By default the function return result in descending order.
 #'
 #' @param data input data frame that you want to select from. Here naming of this parameter is self-explanatory.
