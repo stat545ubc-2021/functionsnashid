@@ -7,13 +7,13 @@
 count_by_category(data, column_name, limit, is_descending = TRUE)
 }
 \arguments{
-\item{data:}{input data frame that you want to select from. Here naming of this parameter is self-explanatory.}
+\item{data}{input data frame that you want to select from. Here naming of this parameter is self-explanatory.}
 
-\item{column_name:}{the column we want to categorize against. This parameter could be named as column as well.}
+\item{column_name}{the column we want to categorize against. This parameter could be named as column as well.}
 
-\item{limit:}{the number of records that we want to return. The parameter name limit is self-documenting and clearly conveys API specification.}
+\item{limit}{the number of records that we want to return. The parameter name limit is self-documenting and clearly conveys API specification.}
 
-\item{is_descending:}{Optional boolean parameter which is set to TRUE by default.}
+\item{is_descending}{Optional boolean parameter which is set to TRUE by default.}
 }
 \value{
 a table, counting the number of observations per category.

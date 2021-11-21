@@ -13,10 +13,10 @@ is.boolean <- function(x){
 #' @description Given a data frame, for a specific column, count of the number of observations per category. This function removes NA values
 #' and then count per category. By default the function return result in descending order.
 #'
-#' @param data: input data frame that you want to select from. Here naming of this parameter is self-explanatory.
-#' @param column_name: the column we want to categorize against. This parameter could be named as column as well.
-#' @param limit: the number of records that we want to return. The parameter name limit is self-documenting and clearly conveys API specification.
-#' @param is_descending: Optional boolean parameter which is set to TRUE by default.
+#' @param data input data frame that you want to select from. Here naming of this parameter is self-explanatory.
+#' @param column_name the column we want to categorize against. This parameter could be named as column as well.
+#' @param limit the number of records that we want to return. The parameter name limit is self-documenting and clearly conveys API specification.
+#' @param is_descending Optional boolean parameter which is set to TRUE by default.
 #
 #' @return a table, counting the number of observations per category.
 #'
