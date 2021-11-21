@@ -27,13 +27,13 @@ You can install the released version of `functionsnashid` from the [GitHub](http
 ``` r
 devtools::install_github("stat545ubc-2021/functionsnashid")
 ```
-## Example
+## Basic Example
 
-This is a basic example which shows you how to solve a common problem.
+Now we demonstrate the basic usage of the function:
 
-In the following example, we get the number of games per genre from the steam_games dataset.
+1. **Results in descending order by default:**
 
-```{r example}
+```{r}
 library(functionsnashid)
 library(tidyverse)
 library(datateachr)
@@ -42,31 +42,16 @@ games <- steam_games %>%
   select(id, name, genre, publisher, developer, original_price, release_date, all_reviews) %>%
   separate_rows(genre, sep = ",", convert = TRUE)
 
-count_by_category(games, genre, 5)
-
+count_by_category(steam_games, genre, 5)
 ```
 
-Now we demonstrate the usage of the function:
-
-**Results in descending order by default:**
+2. **Results in ascending order:**
 
 ```{r}
-count_by_category(games, genre, 5)
+count_by_category(steam_games, genre, 5, FALSE)
 ```
 
-**Results in ascending order:**
-
-```{r}
-count_by_category(games, genre, 5, FALSE)
-```
-
-## Exercise 3: Include examples (15 points)
-
-Demonstrate the usage of your function with a few examples. Use one or more new code chunks, describing what you're doing.
-
-Note: If you want to deliberately show an error, you can use `error = TRUE` in your code chunk option.
-
-### Demonstrate the Usage of the Function:
+## More Examples with Different Datasets
 
 Here we would demonstrate the usage of the function `count_by_category` to explore different dataset:
 

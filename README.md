@@ -23,12 +23,11 @@ with:
 devtools::install_github("stat545ubc-2021/functionsnashid")
 ```
 
-## Example
+## Basic Example
 
-This is a basic example which shows you how to solve a common problem.
+Now we demonstrate the basic usage of the function:
 
-In the following example, we get the number of games per genre from the
-steam_games dataset.
+1.  **Results in descending order by default:**
 
 ``` r
 library(functionsnashid)
@@ -47,56 +46,32 @@ games <- steam_games %>%
   select(id, name, genre, publisher, developer, original_price, release_date, all_reviews) %>%
   separate_rows(genre, sep = ",", convert = TRUE)
 
-count_by_category(games, genre, 5)
+count_by_category(steam_games, genre, 5)
 #> # A tibble: 5 × 2
-#>   genre      count
-#>   <chr>      <int>
-#> 1 Indie      24684
-#> 2 Action     16558
-#> 3 Adventure  13106
-#> 4 Casual     13083
-#> 5 Simulation  9491
+#>   genre                  count
+#>   <chr>                  <int>
+#> 1 Action                  2386
+#> 2 Action,Indie            2129
+#> 3 Casual,Indie            1732
+#> 4 Action,Adventure,Indie  1585
+#> 5 Adventure,Indie         1520
 ```
 
-Now we demonstrate the usage of the function:
-
-**Results in descending order by default:**
+2.  **Results in ascending order:**
 
 ``` r
-count_by_category(games, genre, 5)
+count_by_category(steam_games, genre, 5, FALSE)
 #> # A tibble: 5 × 2
-#>   genre      count
-#>   <chr>      <int>
-#> 1 Indie      24684
-#> 2 Action     16558
-#> 3 Adventure  13106
-#> 4 Casual     13083
-#> 5 Simulation  9491
+#>   genre                                                                    count
+#>   <chr>                                                                    <int>
+#> 1 Accounting,Animation & Modeling,Audio Production,Design & Illustration,…     1
+#> 2 Accounting,Education,Software Training,Utilities,Early Access                1
+#> 3 Action,Adventure,Casual,Early Access                                         1
+#> 4 Action,Adventure,Casual,Free to Play                                         1
+#> 5 Action,Adventure,Casual,Free to Play,Early Access                            1
 ```
 
-**Results in ascending order:**
-
-``` r
-count_by_category(games, genre, 5, FALSE)
-#> # A tibble: 5 × 2
-#>   genre     count
-#>   <chr>     <int>
-#> 1 HTC           1
-#> 2 Tutorial      1
-#> 3 360 Video     2
-#> 4 Short         3
-#> 5 Valve         4
-```
-
-## Exercise 3: Include examples (15 points)
-
-Demonstrate the usage of your function with a few examples. Use one or
-more new code chunks, describing what you’re doing.
-
-Note: If you want to deliberately show an error, you can use
-`error = TRUE` in your code chunk option.
-
-### Demonstrate the Usage of the Function:
+## More Examples with Different Datasets
 
 Here we would demonstrate the usage of the function `count_by_category`
 to explore different dataset:
