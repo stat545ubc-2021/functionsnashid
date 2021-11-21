@@ -30,6 +30,7 @@ is.boolean <- function(x){
 #' count_by_category(datateachr:: steam_games, developer, 5, FALSE)
 #'
 #' @import dplyr tidyr datateachr
+#' @importFrom utils head
 #' @export
 count_by_category <- function(data, column_name, limit, is_descending = TRUE) {
   # demonstrate incorrect argument handing
