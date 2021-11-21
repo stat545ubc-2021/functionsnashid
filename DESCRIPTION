@@ -1,6 +1,6 @@
 Package: functionsnashid
 Type: Package
-Title: get by category
+Title: Collection of functions for data exploration
 Version: 0.1.0
 Authors@R: 
     person(given = "Noor ",
@@ -13,6 +13,7 @@ Description: Given a data frame, for a specific column, count of the number of o
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
 Imports: 
     datateachr,
     dplyr,

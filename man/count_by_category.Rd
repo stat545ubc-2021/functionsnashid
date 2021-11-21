@@ -2,7 +2,7 @@
 % Please edit documentation in R/count_by_category.R
 \name{count_by_category}
 \alias{count_by_category}
-\title{**count_by_category**}
+\title{\strong{count_by_category}}
 \usage{
 count_by_category(data, column_name, limit, is_descending = TRUE)
 }
