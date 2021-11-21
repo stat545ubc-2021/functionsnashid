@@ -35,9 +35,9 @@ Please check `?count_by_category` for a more detailed explanation of the functio
 1. **Results in descending order by default:**
 
 ```{r}
+suppressMessages(library(tidyverse))
+suppressMessages(library(datateachr))
 library(functionsnashid)
-library(tidyverse)
-library(datateachr)
 
 games <- steam_games %>%
   select(id, name, genre, publisher, developer, original_price, release_date, all_reviews) %>%
