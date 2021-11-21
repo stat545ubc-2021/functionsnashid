@@ -28,7 +28,9 @@ devtools::install_github("stat545ubc-2021/functionsnashid")
 ## Basic Example
 
 Please check `?count_by_category` for a more detailed explanation of the
-function. Now we demonstrate the basic usage of the function:
+function. Now we demonstrate the basic usage of the function. In the
+following example, we get the number of games per genre from the
+steam_games dataset.
 
 1.  **Results in descending order by default:**
 
