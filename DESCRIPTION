@@ -2,10 +2,14 @@ Package: functionsnashid
 Type: Package
 Title: get by category
 Version: 0.1.0
-Author: Noor Nashid
+Authors@R: 
+    person(given = "Noor ",
+           family = "Nashid",
+           role = c("aut", "cre"),
+           email = "noor.nashid1@gmail.com")
 Maintainer: The package maintainer <noor.nashid1@gmail.com>
-Description: get by category
-    Use four spaces when indenting paragraphs within the Description.
+Description: Given a data frame, for a specific column, count of the number of observations per category. 
+    This function removes NA values and then count per category. By default the function return result in descending order.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
