@@ -6,22 +6,20 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of functionsnashid is to implement counting the number of
+During the data exploration phase, developers write repeated code to
+investigate the summary view based on different categories. The goal of
+this package is to avoid writing [boilerplate
+code](https://en.wikipedia.org/wiki/Boilerplate_code) during the data
+exploration phase. This package implements counting the number of
 observations per category.
 
 ## Installation
 
-You can install the released version of functionsnashid from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the released version of `functionsnashid` from the
+[GitHub](https://github.com/stat545ubc-2021/functionsnashid) repository
+with:
 
 ``` r
-install.packages("functionsnashid")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
 devtools::install_github("stat545ubc-2021/functionsnashid")
 ```
 
