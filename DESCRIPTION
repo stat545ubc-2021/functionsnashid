@@ -1,14 +1,22 @@
 Package: functionsnashid
 Type: Package
-Title: What the Package Does (Title Case)
+Title: get by category
 Version: 0.1.0
-Author: Who wrote it
+Author: Noor Nashid
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Description: get by category
     Use four spaces when indenting paragraphs within the Description.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    ggplot2,
+    datateachr,
+    gapminder,
+    dplyr,
+    magrittr,
+    tidyr,
+    tidyverse
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
