@@ -28,7 +28,8 @@ is.boolean <- function(x){
 #' count_by_category(datateachr:: building_permits, property_use, 5, TRUE)
 #' count_by_category(datateachr:: steam_games, developer, 6)
 #' count_by_category(datateachr:: steam_games, developer, 5, FALSE)
-#
+#'
+#' @import dplyr tidyr datateachr
 #' @export
 count_by_category <- function(data, column_name, limit, is_descending = TRUE) {
   # demonstrate incorrect argument handing
