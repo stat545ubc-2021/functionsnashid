@@ -11,11 +11,12 @@ investigate the summary view based on different categories. The goal of
 this package is to avoid writing [boilerplate
 code](https://en.wikipedia.org/wiki/Boilerplate_code) during the data
 exploration phase. This package implements counting the number of
-observations per category.
+observations per category in a given dataset.
 
 ## Installation
 
-You can install the released version of `functionsnashid` from the
+This package is not in the CRAN yet. You can install the development
+version of `functionsnashid` from the
 [GitHub](https://github.com/stat545ubc-2021/functionsnashid) repository
 with:
 
